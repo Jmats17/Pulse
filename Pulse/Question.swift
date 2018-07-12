@@ -12,7 +12,8 @@ class Question {
     var question : String
     var answer : String?
     var votes : Int = 0
-    
+    var dateAdded = Date()
+
     init(question : String, answer : String?, votes : Int = 0) {
         self.question = question
         self.answer = answer

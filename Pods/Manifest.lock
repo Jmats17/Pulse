@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 8b65085d106d9e79c0b936bbc402669748c58266
+PODS:
+  - PinterestSegment (1.2.0)
+
+DEPENDENCIES:
+  - PinterestSegment
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PinterestSegment
+
+SPEC CHECKSUMS:
+  PinterestSegment: d589fce6c62141466b9f36ea8ab0a16fde9ac8f4
+
+PODFILE CHECKSUM: 7e03ef00dd71273785265032894d750d44be7fb7
 
 COCOAPODS: 1.5.3

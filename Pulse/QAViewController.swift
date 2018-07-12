@@ -8,19 +8,62 @@
 
 import Foundation
 import UIKit
+import PinterestSegment
 
 class QAViewController : UIViewController {
     
+    @IBOutlet weak var navBar : UINavigationBar!
+    @IBOutlet weak var segmentView : UIView!
     @IBOutlet weak var tableView : UITableView!
     var numVotes = 0
     var questions = [Question]()
-
+    var segment : PinterestSegment!
+    let filters = ["Most Recent","Most Popular", "Tags"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         createMockQuestions()
+        addSegmentView()
+        self.navBar.setBackgroundImage(UIImage(), for: .default)
+        self.navBar.shadowImage = UIImage()
+        self.navBar.isTranslucent = true
+        segment.valueChange = { index in
+            switch self.filters[index] {
+            case "Most Popular":
+                self.questions = self.questions.sorted(by: { $0.votes > $1.votes })
+            case "Most Recent":
+                self.questions = self.questions.sorted(by: { $0.dateAdded > $1.dateAdded })
+            default:
+                break
+            }
+            self.tableView.reloadData()
+        }
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    func addSegmentView() {
+        var style = PinterestSegmentStyle()
+        
+        style.indicatorColor = UIColor(red: 223/255, green: 230/255, blue: 233/255, alpha: 0.5)
+        style.titleMargin = 15
+        style.titlePendingHorizontal = 14
+        style.titlePendingVertical = 10
+        style.titleFont = UIFont.systemFont(ofSize: 18, weight: .regular)
+        style.normalTitleColor = UIColor(red: 99/255, green: 110/255, blue: 115/255, alpha: 0.5)
+        style.selectedTitleColor = UIColor(red: 41/255, green: 128/255, blue: 185/255, alpha: 1)
+        segment = PinterestSegment(frame: CGRect(x: (segmentView.bounds.origin.x), y: (segmentView.bounds.origin.y / 2), width: segmentView.bounds.width, height: 40), titles: filters)
+        segment.style = style
+        self.segmentView.addSubview(segment)
     }
     
     func createMockQuestions() {
