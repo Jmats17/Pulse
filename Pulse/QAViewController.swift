@@ -24,7 +24,7 @@ class QAViewController : UIViewController {
     }
     
     func createMockQuestions() {
-        let question = Question(question: "Does GE have a cryptocurrency?", answer: nil)
+        let question = Question(question: "Does GE have a cryptocurrency?", answer: "yes its called flannerycoin")
         let questionTwo = Question(question: "Is GE being sold to Github", answer: nil)
         let questionThree = Question(question: "GE acquiring Nestle for unlimited oreos?", answer: nil)
         questions.append(question)
@@ -41,7 +41,7 @@ class QAViewController : UIViewController {
         let submit = UIAlertAction(title: "Submit", style: .default) { (action) in
             let questionTextfield = alert.textFields![0] as UITextField
             let question = Question(question: questionTextfield.text!, answer: nil)
-            self.questions.append(question)
+            self.questions.insert(question, at: 0)
             self.tableView.reloadData()
 
         }
@@ -89,7 +89,13 @@ extension QAViewController : UITableViewDelegate, UITableViewDataSource, QATable
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 103
+
+        return 126
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -100,6 +106,15 @@ extension QAViewController : UITableViewDelegate, UITableViewDataSource, QATable
         
         cell.questionLabel.text = question.question
         cell.votesLabel.text = "\(question.votes)"
+        if question.votes > 0 {
+            cell.votesLabel.textColor = UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1.0)
+        }
+        else if question.votes == 0 {
+            cell.votesLabel.textColor = UIColor.black
+        }
+        else {
+            cell.votesLabel.textColor = UIColor(red: 231/255, green: 76/255, blue: 60/255, alpha: 1.0)
+        }
         return cell
     }
     
