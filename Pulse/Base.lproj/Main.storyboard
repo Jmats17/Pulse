@@ -19,9 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dto-Ir-agE">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dto-Ir-agE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QACell" rowHeight="103" id="ppl-gh-wtF" customClass="QATableViewCell" customModule="Pulse" customModuleProvider="target">
@@ -89,8 +88,31 @@
                                     <outlet property="delegate" destination="sMU-XV-l27" id="KgD-aY-qET"/>
                                 </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYe-BP-Asf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Q &amp; A" id="4iv-Cc-bP3">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="backbutton" id="Kdr-Wp-I4a"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="foE-pV-0Xd">
+                                            <color key="tintColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="askQuestionWithSender:" destination="sMU-XV-l27" id="Xrg-et-cfV"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bYe-BP-Asf" firstAttribute="top" secondItem="AbF-8W-IU7" secondAttribute="top" id="1cj-rk-rOV"/>
+                            <constraint firstAttribute="trailing" secondItem="bYe-BP-Asf" secondAttribute="trailing" id="9pW-QL-Xei"/>
+                            <constraint firstItem="bYe-BP-Asf" firstAttribute="trailing" secondItem="dto-Ir-agE" secondAttribute="trailing" id="TIJ-6F-DOh"/>
+                            <constraint firstItem="bYe-BP-Asf" firstAttribute="leading" secondItem="6NT-WW-g7g" secondAttribute="leading" id="WxI-Ta-nOF"/>
+                            <constraint firstItem="bYe-BP-Asf" firstAttribute="leading" secondItem="dto-Ir-agE" secondAttribute="leading" id="YJa-bL-eod"/>
+                            <constraint firstItem="dto-Ir-agE" firstAttribute="bottom" secondItem="AbF-8W-IU7" secondAttribute="bottom" id="c47-kb-5fi"/>
+                            <constraint firstItem="dto-Ir-agE" firstAttribute="top" secondItem="bYe-BP-Asf" secondAttribute="bottom" id="zec-I3-fXF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AbF-8W-IU7"/>
                     </view>
                     <connections>
@@ -142,4 +164,7 @@
             <point key="canvasLocation" x="88.799999999999997" y="81.409295352323838"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backbutton" width="10" height="19"/>
+    </resources>
 </document>

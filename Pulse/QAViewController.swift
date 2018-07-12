@@ -14,6 +14,7 @@ class QAViewController : UIViewController {
     @IBOutlet weak var tableView : UITableView!
     var numVotes = 0
     var questions = [Question]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,25 @@ class QAViewController : UIViewController {
 
     }
     
+    @IBAction func askQuestion(sender : UIButton) {
+        let alert = UIAlertController(title: "Post a Question", message: "Please post a question you have below", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: { (textField) in
+            textField.placeholder = "Enter your question here"
+        })
+        let submit = UIAlertAction(title: "Submit", style: .default) { (action) in
+            let questionTextfield = alert.textFields![0] as UITextField
+            let question = Question(question: questionTextfield.text!, answer: nil)
+            self.questions.append(question)
+            self.tableView.reloadData()
+
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+            
+        }
+        alert.addAction(submit)
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
+    }
 
     
     
@@ -41,12 +61,10 @@ extension QAViewController : UITableViewDelegate, UITableViewDataSource, QATable
     
     func upVoteTapped(sender: QATableViewCell) {
         guard let indexPath = tableView.indexPath(for: sender) else {return}
-        let cell = tableView.dequeueReusableCell(withIdentifier: "QACell") as! QATableViewCell
         print("up tapped", sender, indexPath)
         let question = questions[indexPath.row]
         question.votes += 1
         print(question.votes)
-       // cell.votesLabel.text = "\(question.votes)"
         tableView.reloadData()
         
     }
