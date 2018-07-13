@@ -16,9 +16,15 @@ class QAViewController : UIViewController {
     @IBOutlet weak var segmentView : UIView!
     @IBOutlet weak var tableView : UITableView!
     var numVotes = 0
-    var questions = [Question]()
+    var questions = [Question]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    var constantQuestions = [Question]()
     var segment : PinterestSegment!
-    let filters = ["Most Recent","Most Popular", "Tags"]
+    var filteredQuestions = [Question]()
+    let filters = ["Most Recent","Most Popular","Engineering","Office", "Crypto", "Nerf", "Fun", "Design", "Serious", "Finance"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,19 +35,58 @@ class QAViewController : UIViewController {
         self.navBar.setBackgroundImage(UIImage(), for: .default)
         self.navBar.shadowImage = UIImage()
         self.navBar.isTranslucent = true
+        checkValue()
+        
+    }
+    
+    func checkValue() {
         segment.valueChange = { index in
             switch self.filters[index] {
             case "Most Popular":
+                self.questions = self.constantQuestions
                 self.questions = self.questions.sorted(by: { $0.votes > $1.votes })
             case "Most Recent":
+                self.questions = self.constantQuestions
                 self.questions = self.questions.sorted(by: { $0.dateAdded > $1.dateAdded })
+            case "Engineering":
+                self.questions = self.constantQuestions
+                self.questions = self.questions.filter{ ($0.tag?.contains("Engineering"))! }
+                print(self.filteredQuestions.count)
+            case "Office":
+                self.questions = self.constantQuestions
+                self.questions = self.questions.filter{ ($0.tag?.contains("Office"))! }
+                print(self.filteredQuestions.count)
+            case "Crypto":
+                self.questions = self.constantQuestions
+                self.questions = self.questions.filter{ ($0.tag?.contains("Crypto"))! }
+                print(self.filteredQuestions.count)
+            case "Nerf":
+                self.questions = self.constantQuestions
+                self.questions = self.questions.filter{ ($0.tag?.contains("Nerf"))! }
+                print(self.filteredQuestions.count)
+            case "Fun":
+                self.questions = self.constantQuestions
+                self.questions = self.questions.filter{ ($0.tag?.contains("Fun"))! }
+                print(self.filteredQuestions.count)
+            case "Design":
+                self.questions = self.constantQuestions
+                self.questions = self.questions.filter{ ($0.tag?.contains("Design"))! }
+                print(self.filteredQuestions.count)
+            case "Serious":
+                self.questions = self.constantQuestions
+                self.questions = self.questions.filter{ ($0.tag?.contains("Serious"))! }
+                print(self.filteredQuestions.count)
+            case "Finance":
+                self.questions = self.constantQuestions
+                self.questions = self.questions.filter{ ($0.tag?.contains("Finance"))! }
+                print(self.filteredQuestions.count)
             default:
                 break
             }
             self.tableView.reloadData()
         }
-        
     }
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -67,13 +112,13 @@ class QAViewController : UIViewController {
     }
     
     func createMockQuestions() {
-        let question = Question(question: "Does GE have a cryptocurrency?", answer: "yes its called flannerycoin")
-        let questionTwo = Question(question: "Is GE being sold to Github", answer: nil)
-        let questionThree = Question(question: "GE acquiring Nestle for unlimited oreos?", answer: nil)
+        let question = Question(question: "Does GE have a Cryptocurreny?", answer: "yes its called flannerycoin", tag: "Crypto")
+        let questionTwo = Question(question: "Is GE being sold to Github", answer: nil, tag: "Finance")
+        let questionThree = Question(question: "GE acquiring Nestle for unlimited oreos?", answer: nil, tag: "Serious")
         questions.append(question)
         questions.append(questionTwo)
         questions.append(questionThree)
-
+        self.constantQuestions = self.questions
     }
     
     @IBAction func askQuestion(sender : UIButton) {
@@ -81,10 +126,15 @@ class QAViewController : UIViewController {
         alert.addTextField(configurationHandler: { (textField) in
             textField.placeholder = "Enter your question here"
         })
+        alert.addTextField(configurationHandler: { (textField) in
+            textField.placeholder = "Enter a tag"
+        })
         let submit = UIAlertAction(title: "Submit", style: .default) { (action) in
             let questionTextfield = alert.textFields![0] as UITextField
-            let question = Question(question: questionTextfield.text!, answer: nil)
+            let tagTextfield = alert.textFields![1] as UITextField
+            let question = Question(question: questionTextfield.text!, answer: nil, tag: tagTextfield.text!)
             self.questions.insert(question, at: 0)
+            self.constantQuestions = self.questions
             self.tableView.reloadData()
 
         }

@@ -13,9 +13,11 @@ class Question {
     var answer : String?
     var votes : Int = 0
     var dateAdded = Date()
-
-    init(question : String, answer : String?, votes : Int = 0) {
+    var tag : String?
+    
+    init(question : String, answer : String?, votes : Int = 0, tag : String) {
         self.question = question
         self.answer = answer
+        self.tag = tag
     }
 }
