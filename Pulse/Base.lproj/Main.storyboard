@@ -342,7 +342,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Justin,                         Here is your daily feed." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYr-ni-dGh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Elon,                         Here is your daily feed." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYr-ni-dGh">
                                 <rect key="frame" x="16" y="40" width="318" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="u2W-gU-tPC"/>
@@ -472,19 +472,19 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9a-8p-soY">
-                                                    <rect key="frame" x="29" y="134" width="89" height="16"/>
+                                                    <rect key="frame" x="29" y="132" width="89" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                                                     <color key="textColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ig-of-VDh">
-                                                    <rect key="frame" x="29" y="111" width="96" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Event Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ig-of-VDh">
+                                                    <rect key="frame" x="29" y="111" width="96" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <color key="textColor" red="0.1764705882" green="0.20392156859999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvj-XT-FhB">
-                                                    <rect key="frame" x="29" y="154" width="89" height="15"/>
+                                                    <rect key="frame" x="29" y="152" width="89" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="89" id="qXj-ht-vOk"/>
                                                     </constraints>
@@ -496,7 +496,7 @@
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="E9a-8p-soY" firstAttribute="top" secondItem="6Ig-of-VDh" secondAttribute="bottom" constant="7" id="Flf-xE-bYa"/>
+                                            <constraint firstItem="E9a-8p-soY" firstAttribute="top" secondItem="6Ig-of-VDh" secondAttribute="bottom" constant="3" id="Flf-xE-bYa"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="E9a-8p-soY" secondAttribute="trailing" constant="51" id="KRB-Ll-5oy"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="eek-y5-Xeh" secondAttribute="bottom" constant="15" id="Lgg-58-wNa"/>
                                             <constraint firstItem="D2i-je-sbl" firstAttribute="top" secondItem="Oql-AH-Tph" secondAttribute="top" id="NRq-t9-DWX"/>
@@ -525,7 +525,7 @@
                                     <outlet property="delegate" destination="gsx-c7-S99" id="vNu-0k-1df"/>
                                 </connections>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cgj-g1-PS2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cgj-g1-PS2">
                                 <rect key="frame" x="304" y="44" width="55" height="55"/>
                             </imageView>
                         </subviews>

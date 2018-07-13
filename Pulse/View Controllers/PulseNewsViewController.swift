@@ -24,7 +24,7 @@ class PulseNewsViewController : UIViewController {
         tableView.delegate = self
         generateEventData()
         generatePulseData()
-        profImageView.image = UIImage(named: "prof.png")
+        profImageView.image = UIImage(named: "elon.jpg")
         profImageView.layer.cornerRadius = profImageView.frame.size.height / 2
 
     }
@@ -37,9 +37,9 @@ class PulseNewsViewController : UIViewController {
     }
     
     func generatePulseData() {
-        let pulseOne = Pulse(title: "GE to the 3rd floor", author: "Elon Tusk", description: "GE is now selling oreos", isPinned : true)
-        let pulseTwo = Pulse(title: "The Road Ahead", author: "Evan Spiegel", description: "What is the road ahead you may ask? Well great question, there are many ways I can go about answering this, but I'll stick to the main one. We really out to look at this answer carefully because when you really think about it, we're answering it just how you want it to be answered. With no logic or thought.", isPinned: true)
-        let pulseThree = Pulse(title: "Bounce house? Yes.", author: "Evan Spiegel", description: "In the latest news, Zuckerberg has decided to join the CoreTech team as a Frontend developer. He'll be joining an amazing team on the brink of sending its employees to Mars to explore healthcare and aviation. Elon Musk commented saying, 'I'm lowkey jealous'", isPinned: true)
+        let pulseOne = Pulse(title: "GE to the 3rd floor", author: "Elon Musk", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis nisl sagittis augue viverra facilisis. Etiam sit amet porttitor erat. Nulla luctus metus quam, a congue augue congue et. Donec venenatis dui eget mauris ultrices, eu consequat ante consequat. Donec interdum nec velit a semper. Donec quis nulla sed libero ultricies congue nec in urna. Maecenas consectetur tellus elit, eget accumsan massa fringilla nec. Donec vestibulum, mauris id ornare dictum, magna metus congue metus", isPinned : true)
+        let pulseTwo = Pulse(title: "The Road Ahead", author: "Evan Spiegel", description: " porttitor erat. Nulla luctus metus quam, a congue augue congue et. Donec venenatis dui eget mauris ultrices, eu consequat ante consequat. Donec interdum nec velit a semper. Donec quis nulla sed libero ultricies congue nec in urna. Maecenas consectetur tellus elit, eget accumsan massa fringilla nec. Donec vestibulum, mauris id ornare dictum, magna", isPinned: true)
+        let pulseThree = Pulse(title: "Bounce house? Yes.", author: "Gary Vee", description: "sit amet, consectetur adipiscing elit. Proin iaculis nisl sagittis augue viverra facilisis. Etiam sit amet porttitor erat. Nulla luctus metus quam, a congue augue congue et. Donec venenatis dui eget mauris ultrices, eu consequat ante consequat. Donec interdum nec velit a semper. Donec quis nulla sed libero ", isPinned: true)
         self.pulses.append(pulseOne)
         self.pulses.append(pulseTwo)
         self.pulses.append(pulseThree)
