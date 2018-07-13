@@ -6,6 +6,7 @@ target 'Pulse' do
   use_frameworks!
 pod 'PinterestSegment'
 pod 'DropDown'
+
   # Pods for Pulse
 
 

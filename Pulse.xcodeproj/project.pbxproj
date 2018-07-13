@@ -22,6 +22,17 @@
 		D07882CE20F7E5A100468678 /* QATableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882CD20F7E5A100468678 /* QATableViewCellDelegate.swift */; };
 		D07882D420F8101D00468678 /* IdeaPitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882D320F8101D00468678 /* IdeaPitchViewController.swift */; };
 		D07882D620F8144300468678 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882D520F8144200468678 /* AnimatedSwitch.swift */; };
+		D07882DE20F83B3100468678 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07882DD20F83B3100468678 /* UserNotifications.framework */; };
+		D07882E020F83B3100468678 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07882DF20F83B3100468678 /* UserNotificationsUI.framework */; };
+		D07882E320F83B3100468678 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882E220F83B3100468678 /* NotificationViewController.swift */; };
+		D07882E620F83B3100468678 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07882E420F83B3100468678 /* MainInterface.storyboard */; };
+		D07882EA20F83B3100468678 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D07882DC20F83B3100468678 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D07882F020F86B1B00468678 /* EventCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882EF20F86B1B00468678 /* EventCollectionCell.swift */; };
+		D07882F220F86B8900468678 /* PulseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882F120F86B8900468678 /* PulseTableViewCell.swift */; };
+		D07882F420F86C5400468678 /* PulseNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882F320F86C5400468678 /* PulseNewsViewController.swift */; };
+		D07882F620F86DFD00468678 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882F520F86DFD00468678 /* Event.swift */; };
+		D07882F820F86E0500468678 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882F720F86E0500468678 /* Pulse.swift */; };
+		D07882FA20F8806900468678 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882F920F8806900468678 /* PopupViewController.swift */; };
 		E9F48195B661731ADF34FF12 /* Pods_PulseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3280CA62372A7A37382D7EB /* Pods_PulseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +51,28 @@
 			remoteGlobalIDString = D078829320F7DBB400468678;
 			remoteInfo = Pulse;
 		};
+		D07882E820F83B3100468678 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D078828C20F7DBB400468678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D07882DB20F83B3100468678;
+			remoteInfo = NotificationService;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D07882EE20F83B3100468678 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D07882EA20F83B3100468678 /* NotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		158948409D46C55466B12E36 /* Pods-Pulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pulse/Pods-Pulse.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +101,19 @@
 		D07882CD20F7E5A100468678 /* QATableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QATableViewCellDelegate.swift; sourceTree = "<group>"; };
 		D07882D320F8101D00468678 /* IdeaPitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaPitchViewController.swift; sourceTree = "<group>"; };
 		D07882D520F8144200468678 /* AnimatedSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSwitch.swift; sourceTree = "<group>"; };
+		D07882D720F8373C00468678 /* Pulse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pulse.entitlements; sourceTree = "<group>"; };
+		D07882DC20F83B3100468678 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07882DD20F83B3100468678 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D07882DF20F83B3100468678 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D07882E220F83B3100468678 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		D07882E520F83B3100468678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D07882E720F83B3100468678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07882EF20F86B1B00468678 /* EventCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionCell.swift; sourceTree = "<group>"; };
+		D07882F120F86B8900468678 /* PulseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseTableViewCell.swift; sourceTree = "<group>"; };
+		D07882F320F86C5400468678 /* PulseNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseNewsViewController.swift; sourceTree = "<group>"; };
+		D07882F520F86DFD00468678 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D07882F720F86E0500468678 /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
+		D07882F920F8806900468678 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		E6C1CC86E4BECF18F38B2A19 /* Pods-PulseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PulseTests/Pods-PulseTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3280CA62372A7A37382D7EB /* Pods_PulseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +143,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D07882D920F83B3100468678 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07882E020F83B3100468678 /* UserNotificationsUI.framework in Frameworks */,
+				D07882DE20F83B3100468678 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,6 +161,8 @@
 				8E7F4E1110B5543570997869 /* Pods_Pulse.framework */,
 				F3280CA62372A7A37382D7EB /* Pods_PulseTests.framework */,
 				6DC925C7C0840C6833EC0BDE /* Pods_PulseUITests.framework */,
+				D07882DD20F83B3100468678 /* UserNotifications.framework */,
+				D07882DF20F83B3100468678 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +186,7 @@
 				D078829620F7DBB400468678 /* Pulse */,
 				D07882AB20F7DBB700468678 /* PulseTests */,
 				D07882B620F7DBB700468678 /* PulseUITests */,
+				D07882E120F83B3100468678 /* NotificationService */,
 				D078829520F7DBB400468678 /* Products */,
 				4D01F3EB089B0E532D37D9DC /* Pods */,
 				4C8F18E5640B2D2839E2B007 /* Frameworks */,
@@ -142,6 +199,7 @@
 				D078829420F7DBB400468678 /* Pulse.app */,
 				D07882A820F7DBB700468678 /* PulseTests.xctest */,
 				D07882B320F7DBB700468678 /* PulseUITests.xctest */,
+				D07882DC20F83B3100468678 /* NotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +207,7 @@
 		D078829620F7DBB400468678 /* Pulse */ = {
 			isa = PBXGroup;
 			children = (
+				D07882D720F8373C00468678 /* Pulse.entitlements */,
 				D078829720F7DBB400468678 /* AppDelegate.swift */,
 				D07882D520F8144200468678 /* AnimatedSwitch.swift */,
 				D07882D020F80F5900468678 /* TableView Cells */,
@@ -187,6 +246,8 @@
 				D07882C520F7DC5600468678 /* MainViewController.swift */,
 				D07882C720F7DD9000468678 /* QAViewController.swift */,
 				D07882D320F8101D00468678 /* IdeaPitchViewController.swift */,
+				D07882F320F86C5400468678 /* PulseNewsViewController.swift */,
+				D07882F920F8806900468678 /* PopupViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -195,6 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				D07882C920F7DDBA00468678 /* QATableViewCell.swift */,
+				D07882EF20F86B1B00468678 /* EventCollectionCell.swift */,
+				D07882F120F86B8900468678 /* PulseTableViewCell.swift */,
 			);
 			path = "TableView Cells";
 			sourceTree = "<group>";
@@ -211,8 +274,20 @@
 			isa = PBXGroup;
 			children = (
 				D07882CB20F7E18400468678 /* Question.swift */,
+				D07882F520F86DFD00468678 /* Event.swift */,
+				D07882F720F86E0500468678 /* Pulse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D07882E120F83B3100468678 /* NotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				D07882E220F83B3100468678 /* NotificationViewController.swift */,
+				D07882E420F83B3100468678 /* MainInterface.storyboard */,
+				D07882E720F83B3100468678 /* Info.plist */,
+			);
+			path = NotificationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +302,12 @@
 				D078829120F7DBB400468678 /* Frameworks */,
 				D078829220F7DBB400468678 /* Resources */,
 				532DE6FC7DB4D1076B7D26F1 /* [CP] Embed Pods Frameworks */,
+				D07882EE20F83B3100468678 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D07882E920F83B3100468678 /* PBXTargetDependency */,
 			);
 			name = Pulse;
 			productName = Pulse;
@@ -275,6 +352,23 @@
 			productReference = D07882B320F7DBB700468678 /* PulseUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D07882DB20F83B3100468678 /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D07882EB20F83B3100468678 /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				D07882D820F83B3100468678 /* Sources */,
+				D07882D920F83B3100468678 /* Frameworks */,
+				D07882DA20F83B3100468678 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationService;
+			productName = NotificationService;
+			productReference = D07882DC20F83B3100468678 /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,6 +381,11 @@
 				TargetAttributes = {
 					D078829320F7DBB400468678 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					D07882A720F7DBB700468678 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -295,6 +394,9 @@
 					D07882B220F7DBB700468678 = {
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = D078829320F7DBB400468678;
+					};
+					D07882DB20F83B3100468678 = {
+						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
 			};
@@ -314,6 +416,7 @@
 				D078829320F7DBB400468678 /* Pulse */,
 				D07882A720F7DBB700468678 /* PulseTests */,
 				D07882B220F7DBB700468678 /* PulseUITests */,
+				D07882DB20F83B3100468678 /* NotificationService */,
 			);
 		};
 /* End PBXProject section */
@@ -340,6 +443,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07882DA20F83B3100468678 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07882E620F83B3100468678 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +541,17 @@
 				D07882CC20F7E18400468678 /* Question.swift in Sources */,
 				D078829820F7DBB400468678 /* AppDelegate.swift in Sources */,
 				D07882CE20F7E5A100468678 /* QATableViewCellDelegate.swift in Sources */,
+				D07882F020F86B1B00468678 /* EventCollectionCell.swift in Sources */,
+				D07882F820F86E0500468678 /* Pulse.swift in Sources */,
+				D07882F620F86DFD00468678 /* Event.swift in Sources */,
 				D07882CA20F7DDBA00468678 /* QATableViewCell.swift in Sources */,
+				D07882F420F86C5400468678 /* PulseNewsViewController.swift in Sources */,
+				D07882F220F86B8900468678 /* PulseTableViewCell.swift in Sources */,
 				D07882D620F8144300468678 /* AnimatedSwitch.swift in Sources */,
 				D07882C820F7DD9000468678 /* QAViewController.swift in Sources */,
 				D07882C620F7DC5600468678 /* MainViewController.swift in Sources */,
 				D07882D420F8101D00468678 /* IdeaPitchViewController.swift in Sources */,
+				D07882FA20F8806900468678 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +571,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D07882D820F83B3100468678 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07882E320F83B3100468678 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -466,6 +591,11 @@
 			isa = PBXTargetDependency;
 			target = D078829320F7DBB400468678 /* Pulse */;
 			targetProxy = D07882B420F7DBB700468678 /* PBXContainerItemProxy */;
+		};
+		D07882E920F83B3100468678 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D07882DB20F83B3100468678 /* NotificationService */;
+			targetProxy = D07882E820F83B3100468678 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -484,6 +614,14 @@
 				D07882A120F7DBB700468678 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D07882E420F83B3100468678 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D07882E520F83B3100468678 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -607,7 +745,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD67D7A75636CBC4B949A2B6 /* Pods-Pulse.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = Pulse/Pulse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96QE7H4LVL;
 				INFOPLIST_FILE = Pulse/Info.plist;
@@ -626,7 +766,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 158948409D46C55466B12E36 /* Pods-Pulse.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_ENTITLEMENTS = Pulse/Pulse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96QE7H4LVL;
 				INFOPLIST_FILE = Pulse/Info.plist;
@@ -727,6 +869,44 @@
 			};
 			name = Release;
 		};
+		D07882EC20F83B3100468678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96QE7H4LVL;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinmatsnev.Pulse.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D07882ED20F83B3100468678 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96QE7H4LVL;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.justinmatsnev.Pulse.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -762,6 +942,15 @@
 			buildConfigurations = (
 				D07882C320F7DBB700468678 /* Debug */,
 				D07882C420F7DBB700468678 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D07882EB20F83B3100468678 /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D07882EC20F83B3100468678 /* Debug */,
+				D07882ED20F83B3100468678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
