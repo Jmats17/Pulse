@@ -6,6 +6,7 @@ target 'Pulse' do
   use_frameworks!
 pod 'PinterestSegment'
 pod 'DropDown'
+pod 'TransitionableTab', '~> 0.1.2'
 
   # Pods for Pulse
 

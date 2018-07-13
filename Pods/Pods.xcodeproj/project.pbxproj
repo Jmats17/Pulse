@@ -7,119 +7,148 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02CAE638EF1CEEBD6F5740498F9CA3F8 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = C636DEC2F381739CA58A6806241C2795 /* DropDown.swift */; };
-		098F056D90AF9CD3FD60D8A81DF043B6 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E287F82A5419AB91B526B93DF4C18 /* DropDownCell.swift */; };
+		02CAE638EF1CEEBD6F5740498F9CA3F8 /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E9D35BE7640B116682CB7906ABB056 /* DropDown.swift */; };
+		08FA3FB7ADCE9BF8E24D99A22659BCF2 /* TransitionableTab-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF9D39A2872AC8F5B2865385995C291 /* TransitionableTab-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		098F056D90AF9CD3FD60D8A81DF043B6 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0D1ACD9469913AE9512E1B16E9608 /* DropDownCell.swift */; };
 		2894734ECAC2DE15976A69D9B22E0EF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		29CDB3669262D9CAE3E9EDAC998C6C73 /* Pods-Pulse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1908286BF681A8C75C98DE2B910EF2 /* Pods-Pulse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D05DFE47D61192EAE32ED59B17076AC /* Pods-PulseTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F21449838344537C269BD15017E2B4 /* Pods-PulseTests-dummy.m */; };
-		2E7E74DF0C455B0BC43BFDD1D0163E64 /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB6266A8F9D6B0C02163AFFB9D36536C /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		332022A9B9AF9775602F02AD2480BFD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		37C293AEA575D6E5186739D1B07805F2 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45345B541FF1C9499E35E74BBF74696 /* DropDownCell.xib */; };
-		3BEAC8EB886415EAE3A15CED9AFC8FDC /* PinterestSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6485ED76E01E41BCA86708B4C7081BEA /* PinterestSegment.swift */; };
-		43654FD5DD38D92E3D595E3682EAFAF0 /* PinterestSegment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE519DB38B4F51C63696B536A704841 /* PinterestSegment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		442ADADA3215E1E5CA1557E708D4228C /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7842499E92E1438E14D4391525B89F9A /* DropDown+Appearance.swift */; };
-		4FE4C9344C9075A01F7DEC6D160EE54C /* Pods-Pulse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E931BA1BAC4EDD480BCF25E5048B5 /* Pods-Pulse-dummy.m */; };
+		2E7E74DF0C455B0BC43BFDD1D0163E64 /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A7FA9781B01CA173891905B1418D4A7 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34C25706DE1AB30C7E5CA85A50D3D91A /* LayerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B108B22AD69B175C596777D68802989 /* LayerContext.swift */; };
+		3551C10A03BF59F0F8A0968599139274 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		37C293AEA575D6E5186739D1B07805F2 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C4319984194AEB2884AC4D4CD20C36 /* DropDownCell.xib */; };
+		3BEAC8EB886415EAE3A15CED9AFC8FDC /* PinterestSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF441E6D54466C96E845322AC081A96 /* PinterestSegment.swift */; };
+		43654FD5DD38D92E3D595E3682EAFAF0 /* PinterestSegment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D21AE83A6F92C6462FC747208BF79962 /* PinterestSegment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		442ADADA3215E1E5CA1557E708D4228C /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A4CA74801E0DE831DB8B64BA472F77 /* DropDown+Appearance.swift */; };
+		57A85785B983F4BE11438B87A1322E63 /* Pods-Pulse-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1908286BF681A8C75C98DE2B910EF2 /* Pods-Pulse-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6488726F6B412BC98C0F09237935D85A /* Pods-PulseUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2621694D0C063869F954C960E47F25D7 /* Pods-PulseUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BDCDC4DFFD42CE846D5A4F2EBEFB921 /* CAMediaTimingFunction+Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC679F6B3B8C05BD6464A4BD1991C4C /* CAMediaTimingFunction+Transition.swift */; };
+		73AD4359B9904443EE49906D3B3CE8C9 /* TransitionableTab-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9836DAC016428E161AE5305F4EB449 /* TransitionableTab-dummy.m */; };
 		965FC285171FE96F80BE6CBDB7623EB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		9D0221E27E37CDA9DF26DD3CFA56D75B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE79636D7D12928E784975037145A65 /* DPDKeyboardListener.swift */; };
-		A401CF18D15DF246F40FAC4E8F06CBC7 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81E36FD1D91E5049F1C4210C6F1F10E /* DPDUIView+Extension.swift */; };
-		A812E7811821F66B3B7499F6F1B513BA /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064C381C45E6B0DDECC20456C59EF743 /* DPDConstants.swift */; };
-		AC6581D9387744158B44BE683403C3BC /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 636C9572459C894864E455C51BC4736F /* DropDown-dummy.m */; };
-		C311BBEAF75CC9FC365738C88EA32DC5 /* PinterestSegment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2321CDC70F3BA2102E72FD627245C1 /* PinterestSegment-dummy.m */; };
+		9D0221E27E37CDA9DF26DD3CFA56D75B /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048D64EFC483755473E5EE1496FD8338 /* DPDKeyboardListener.swift */; };
+		A401CF18D15DF246F40FAC4E8F06CBC7 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E9335A282B0E9D50DCF51BE57C898 /* DPDUIView+Extension.swift */; };
+		A4CF1E5645E3293B9F670AA69AB851AC /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9D57E090BDB0A6D1C3A7E7F4D5DF3 /* Options.swift */; };
+		A812E7811821F66B3B7499F6F1B513BA /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713DB74AF8D156E3CDCE08FBEC5ED4B /* DPDConstants.swift */; };
+		AC6581D9387744158B44BE683403C3BC /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E86538A5E2D7C8579AFA0F4DB859B78E /* DropDown-dummy.m */; };
+		C311BBEAF75CC9FC365738C88EA32DC5 /* PinterestSegment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F169553B2D99EE57E07B0E2C02DED3 /* PinterestSegment-dummy.m */; };
+		CBBD203BDC0D273391D097276E6390E5 /* Pods-Pulse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2E931BA1BAC4EDD480BCF25E5048B5 /* Pods-Pulse-dummy.m */; };
 		CBD760221F9925A6CD8348E0B440034A /* Pods-PulseTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C651023154A4D5738CAD2F80EF113D /* Pods-PulseTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0C666BDE2911906D3CD44BD203C02D3 /* TransitionableTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609FBBFC72FF39A1A4A1A053CD1B4CED /* TransitionableTab.swift */; };
+		D9D8B9E56F23089E08844B0D4567CC94 /* DefineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10317167BBD6EE95A901B49B3F5A852 /* DefineAnimation.swift */; };
 		E5BA237CA30B5B01373DAD85F9315538 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		E8D7C1DAA7B0881E1226E90D8BA5F236 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		EF1512B2517C911F9AFA1BF03B586FC5 /* Pods-PulseUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA714F23B22B0F98B975C0E4DA1803CC /* Pods-PulseUITests-dummy.m */; };
+		FA46F2F0BAD0585B49336671B1974774 /* AnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52935786ED0E0FED745B2EBE57D6DA68 /* AnimationFactory.swift */; };
+		FA831393E4F5098DC892308CA49B4FE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		73B6C78EAC5633334F61D25562365886 /* PBXContainerItemProxy */ = {
+		16A301ECDF79B068D0D2C796CFF68743 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5168099F2EBFC99A707C03C9EADE01A5;
-			remoteInfo = DropDown;
+			remoteGlobalIDString = 0D38C3CF442B2B7C51E38C5F60B03D77;
+			remoteInfo = TransitionableTab;
 		};
-		9BC1B09AECF8FBA76AB7A9BD4B2E4AAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F9DEF3915E86D039FFACE72156022984;
-			remoteInfo = "Pods-Pulse";
-		};
-		A4D944434508AF35EA0A1A410A40113B /* PBXContainerItemProxy */ = {
+		6896575E17D49877AC77D41CDE4AC6F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FECEE591A990DD0D724958FD9AFEF5C4;
 			remoteInfo = PinterestSegment;
 		};
+		9BC1B09AECF8FBA76AB7A9BD4B2E4AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11E84217F820BD557D25C9C5E3DEFDAA;
+			remoteInfo = "Pods-Pulse";
+		};
+		D1161095BF7814890B3A5EBE2B10B5BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5168099F2EBFC99A707C03C9EADE01A5;
+			remoteInfo = DropDown;
+		};
 		E18872D22980AE90B31F486262EABD32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F9DEF3915E86D039FFACE72156022984;
+			remoteGlobalIDString = 11E84217F820BD557D25C9C5E3DEFDAA;
 			remoteInfo = "Pods-Pulse";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02AB74203A46BA7C353406A8FF585E8A /* Pods-PulseUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PulseUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		048D64EFC483755473E5EE1496FD8338 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
 		05139E5CBB04B63DA7AC1ED7B1446210 /* Pods-Pulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pulse.debug.xcconfig"; sourceTree = "<group>"; };
-		064C381C45E6B0DDECC20456C59EF743 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		074E9335A282B0E9D50DCF51BE57C898 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
 		09099B2D129371E5F13556D8203A3758 /* Pods-Pulse-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pulse-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0FCDDD7ACDAD03FD3CF1F8E35478E3D3 /* Pods-Pulse-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pulse-acknowledgements.plist"; sourceTree = "<group>"; };
-		0FFD7493BE806934EB1526B3327CD1CF /* PinterestSegment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinterestSegment.xcconfig; sourceTree = "<group>"; };
+		111521CE5FE4DA8D8692D7F50F476F71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12191D412D8720F3DA7B671029EB4CFD /* Pods_PulseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PulseUITests.framework; path = "Pods-PulseUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C04134AD31BD97C602231F7167A2770 /* Pods-PulseTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PulseTests-resources.sh"; sourceTree = "<group>"; };
+		1F04EA291DEAC8BEF6BF535DEDF1ED32 /* TransitionableTab.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TransitionableTab.modulemap; sourceTree = "<group>"; };
+		248F2C809CFBC24AD6F7041D1CE2BE14 /* PinterestSegment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PinterestSegment.xcconfig; sourceTree = "<group>"; };
 		2621694D0C063869F954C960E47F25D7 /* Pods-PulseUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PulseUITests-umbrella.h"; sourceTree = "<group>"; };
-		274DC2D9B97007BC76EC2EB95C2F4467 /* Pods_PulseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PulseTests.framework; path = "Pods-PulseTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		286ACB3C4B0F3F82EA851F205589C249 /* Pods-PulseUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PulseUITests-frameworks.sh"; sourceTree = "<group>"; };
 		2E31A4F723C659EC3174BF80518EC051 /* Pods-PulseUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PulseUITests.modulemap"; sourceTree = "<group>"; };
 		36F32972D0BF2DFFD095FCAD2CE2221E /* Pods-PulseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3795B58CF191CC141F055B7066CE9EDE /* Pods_Pulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pulse.framework; path = "Pods-Pulse.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C651023154A4D5738CAD2F80EF113D /* Pods-PulseTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PulseTests-umbrella.h"; sourceTree = "<group>"; };
-		3B2321CDC70F3BA2102E72FD627245C1 /* PinterestSegment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinterestSegment-dummy.m"; sourceTree = "<group>"; };
+		391E01B0896182F31463871B8C0E991B /* TransitionableTab.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TransitionableTab.xcconfig; sourceTree = "<group>"; };
+		3987E0A67EF7179DF8A313B8911AC16F /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		39B9D57E090BDB0A6D1C3A7E7F4D5DF3 /* Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Options.swift; path = Sources/Options.swift; sourceTree = "<group>"; };
 		475D718B16F02514710C88F19BE29630 /* Pods-PulseTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PulseTests.modulemap"; sourceTree = "<group>"; };
-		49B06AD07E96C1D501173E9611917634 /* Pods_PulseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PulseUITests.framework; path = "Pods-PulseUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B108B22AD69B175C596777D68802989 /* LayerContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerContext.swift; path = Sources/LayerContext.swift; sourceTree = "<group>"; };
 		4BBB900B3D2D7BBD01146B35A9709BA4 /* Pods-PulseTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PulseTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		50286CE2773301B45007284AC8DCD650 /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
-		5224176A76CBECB51CBAAAFC2D16E0A2 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		4CD0D1ACD9469913AE9512E1B16E9608 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		5028C459D9A33D7128FE87AB67C4B08A /* TransitionableTab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TransitionableTab.framework; path = TransitionableTab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A4CA74801E0DE831DB8B64BA472F77 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		52935786ED0E0FED745B2EBE57D6DA68 /* AnimationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationFactory.swift; path = Sources/AnimationFactory.swift; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5AE79636D7D12928E784975037145A65 /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		5A9836DAC016428E161AE5305F4EB449 /* TransitionableTab-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TransitionableTab-dummy.m"; sourceTree = "<group>"; };
+		5AC32339B134CBF2AD50898D45B81EC3 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
 		5F1F638F19179BE7BA98C8F671B6C0C4 /* Pods-PulseUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PulseUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5FBC755D29825F32477D2783D9315BBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		636C9572459C894864E455C51BC4736F /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
-		6485ED76E01E41BCA86708B4C7081BEA /* PinterestSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinterestSegment.swift; path = PinterestSegment/PinterestSegment.swift; sourceTree = "<group>"; };
+		609FBBFC72FF39A1A4A1A053CD1B4CED /* TransitionableTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionableTab.swift; path = Sources/TransitionableTab.swift; sourceTree = "<group>"; };
+		63F169553B2D99EE57E07B0E2C02DED3 /* PinterestSegment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PinterestSegment-dummy.m"; sourceTree = "<group>"; };
+		65E9D35BE7640B116682CB7906ABB056 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
+		6BC679F6B3B8C05BD6464A4BD1991C4C /* CAMediaTimingFunction+Transition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAMediaTimingFunction+Transition.swift"; path = "Sources/CAMediaTimingFunction+Transition.swift"; sourceTree = "<group>"; };
 		73BE9C7C5A68EAA84DFF68D2529B2A86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7842499E92E1438E14D4391525B89F9A /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		74DADD447EBBCC0FE7B4D51593B16337 /* Pods_PulseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PulseTests.framework; path = "Pods-PulseTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1908286BF681A8C75C98DE2B910EF2 /* Pods-Pulse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pulse-umbrella.h"; sourceTree = "<group>"; };
-		7C208D7EF9BC668B674EEEA12BFE4446 /* PinterestSegment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinterestSegment.framework; path = PinterestSegment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		896AD31CDD94C00090DC4AF02F8AD314 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF9D39A2872AC8F5B2865385995C291 /* TransitionableTab-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionableTab-umbrella.h"; sourceTree = "<group>"; };
+		8DF441E6D54466C96E845322AC081A96 /* PinterestSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinterestSegment.swift; path = PinterestSegment/PinterestSegment.swift; sourceTree = "<group>"; };
+		90EFA07088B9640C20426700910EDA1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91C4319984194AEB2884AC4D4CD20C36 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93EA69E5CB9842D8FF5E36807ACC0192 /* Pods-PulseTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PulseTests-frameworks.sh"; sourceTree = "<group>"; };
+		948F605D237CA21D18F2B150DC5389AE /* TransitionableTab-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TransitionableTab-prefix.pch"; sourceTree = "<group>"; };
+		9A7FA9781B01CA173891905B1418D4A7 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
 		9EB7CDD383EFD341620DC6DFCB89F093 /* Pods-PulseTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PulseTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9F2E931BA1BAC4EDD480BCF25E5048B5 /* Pods-Pulse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pulse-dummy.m"; sourceTree = "<group>"; };
-		9FB7BDFAF535CABD1EEEA7D12E139179 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A01A5E3381E18A70514BF5716E6BD689 /* Pods-Pulse-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pulse-resources.sh"; sourceTree = "<group>"; };
-		A45345B541FF1C9499E35E74BBF74696 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
-		A67E287F82A5419AB91B526B93DF4C18 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
-		AAE519DB38B4F51C63696B536A704841 /* PinterestSegment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinterestSegment-umbrella.h"; sourceTree = "<group>"; };
+		A0DCB06281F005014DE8B4339D093D63 /* PinterestSegment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PinterestSegment.modulemap; sourceTree = "<group>"; };
+		A8CE8A0557D87DFA23E3676412E46680 /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
 		B5F21449838344537C269BD15017E2B4 /* Pods-PulseTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PulseTests-dummy.m"; sourceTree = "<group>"; };
 		B7BCA402AB4917FE96BC35B3BD31E21E /* Pods-PulseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulseUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB6266A8F9D6B0C02163AFFB9D36536C /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
 		BDD6ED2DE65663A194D0375B995013AB /* Pods-PulseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulseTests.release.xcconfig"; sourceTree = "<group>"; };
-		C310B9C19E89119D28CAC4A28A125C06 /* PinterestSegment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PinterestSegment.modulemap; sourceTree = "<group>"; };
-		C636DEC2F381739CA58A6806241C2795 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
-		D03D3311838127FE8B8063B46B8FEBE3 /* PinterestSegment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinterestSegment-prefix.pch"; sourceTree = "<group>"; };
+		D10317167BBD6EE95A901B49B3F5A852 /* DefineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefineAnimation.swift; path = Sources/DefineAnimation.swift; sourceTree = "<group>"; };
+		D1F4C62DD222F729468CFF4D6645B15C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D21AE83A6F92C6462FC747208BF79962 /* PinterestSegment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinterestSegment-umbrella.h"; sourceTree = "<group>"; };
 		D23D63659542B6FD57F7676E6AD412FE /* Pods-PulseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PulseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D426635FCDD62A296DBE5949DA494512 /* Pods-Pulse-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pulse-frameworks.sh"; sourceTree = "<group>"; };
-		D81E36FD1D91E5049F1C4210C6F1F10E /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		D87CEBCF566EE553622CCB0DDF9D849D /* PinterestSegment-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PinterestSegment-prefix.pch"; sourceTree = "<group>"; };
 		E1AC14D587F5E43FA148EEB87B07F724 /* Pods-PulseUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PulseUITests-resources.sh"; sourceTree = "<group>"; };
-		E82B5AD5AB7E6188B825D751C614DE72 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E83EF27F2259A794794D2374C6E4AC8A /* Pods-Pulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pulse.release.xcconfig"; sourceTree = "<group>"; };
+		E86538A5E2D7C8579AFA0F4DB859B78E /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
 		EA714F23B22B0F98B975C0E4DA1803CC /* Pods-PulseUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PulseUITests-dummy.m"; sourceTree = "<group>"; };
+		EABF032D5CC7FFB6BDF341813ABE4301 /* PinterestSegment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PinterestSegment.framework; path = PinterestSegment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2FC4A4B1660A7628DCA8BD721D363E /* Pods-Pulse.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pulse.modulemap"; sourceTree = "<group>"; };
-		EED29BAAF4FA1FF88CF2A73647FAFB8F /* Pods_Pulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pulse.framework; path = "Pods-Pulse.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1352DE571494E3F3745340737D23465 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB46EB960CC8F928BF45C389AD6C0738 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		F713DB74AF8D156E3CDCE08FBEC5ED4B /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
 		FF2B624753D1597FA688400CE4B13C95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,17 +185,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBBCC77214D9B9C8A6A02C52AD0179E2 /* Frameworks */ = {
+		D633444F0A8895ADDB6A2A6D66383322 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				332022A9B9AF9775602F02AD2480BFD0 /* Foundation.framework in Frameworks */,
+				FA831393E4F5098DC892308CA49B4FE9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2DBC588B5D838ABD5AE81D8DBE24DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3551C10A03BF59F0F8A0968599139274 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101AF729F9E254D03AB1192CADA2DF0F /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				F713DB74AF8D156E3CDCE08FBEC5ED4B /* DPDConstants.swift */,
+				048D64EFC483755473E5EE1496FD8338 /* DPDKeyboardListener.swift */,
+				074E9335A282B0E9D50DCF51BE57C898 /* DPDUIView+Extension.swift */,
+				65E9D35BE7640B116682CB7906ABB056 /* DropDown.swift */,
+				51A4CA74801E0DE831DB8B64BA472F77 /* DropDown+Appearance.swift */,
+				4CD0D1ACD9469913AE9512E1B16E9608 /* DropDownCell.swift */,
+				27812F1335FA9E23135BA2A4B4648D23 /* Resources */,
+				1A8CABD4B60C66A9C4EC98D5957E25BF /* Support Files */,
+			);
+			name = DropDown;
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		1A8CABD4B60C66A9C4EC98D5957E25BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3987E0A67EF7179DF8A313B8911AC16F /* DropDown.modulemap */,
+				A8CE8A0557D87DFA23E3676412E46680 /* DropDown.xcconfig */,
+				E86538A5E2D7C8579AFA0F4DB859B78E /* DropDown-dummy.m */,
+				5AC32339B134CBF2AD50898D45B81EC3 /* DropDown-prefix.pch */,
+				9A7FA9781B01CA173891905B1418D4A7 /* DropDown-umbrella.h */,
+				90EFA07088B9640C20426700910EDA1F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		1AAB8214D9F95A04E10FFB66DC76A40C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				111521CE5FE4DA8D8692D7F50F476F71 /* Info.plist */,
+				A0DCB06281F005014DE8B4339D093D63 /* PinterestSegment.modulemap */,
+				248F2C809CFBC24AD6F7041D1CE2BE14 /* PinterestSegment.xcconfig */,
+				63F169553B2D99EE57E07B0E2C02DED3 /* PinterestSegment-dummy.m */,
+				D87CEBCF566EE553622CCB0DDF9D849D /* PinterestSegment-prefix.pch */,
+				D21AE83A6F92C6462FC747208BF79962 /* PinterestSegment-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PinterestSegment";
+			sourceTree = "<group>";
+		};
+		27812F1335FA9E23135BA2A4B4648D23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91C4319984194AEB2884AC4D4CD20C36 /* DropDownCell.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		330376718570DDC1B6E7594B06F1B24A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,25 +284,12 @@
 			path = "Target Support Files/Pods-Pulse";
 			sourceTree = "<group>";
 		};
-		4D8F1CD1545DEE6281109F5DABDDF8D8 /* Support Files */ = {
+		3ADB52B925FA744C4C3CC54DA88D5847 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5224176A76CBECB51CBAAAFC2D16E0A2 /* DropDown.modulemap */,
-				50286CE2773301B45007284AC8DCD650 /* DropDown.xcconfig */,
-				636C9572459C894864E455C51BC4736F /* DropDown-dummy.m */,
-				FB46EB960CC8F928BF45C389AD6C0738 /* DropDown-prefix.pch */,
-				BB6266A8F9D6B0C02163AFFB9D36536C /* DropDown-umbrella.h */,
-				9FB7BDFAF535CABD1EEEA7D12E139179 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DropDown";
-			sourceTree = "<group>";
-		};
-		5945772D01D40D21C81BEC4C59954A15 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8C64946197B2F85F79429F1586A0AAD5 /* DropDown */,
-				C985CB78FD19D6BACA01D5F532E7763A /* PinterestSegment */,
+				101AF729F9E254D03AB1192CADA2DF0F /* DropDown */,
+				C47E09A8AEF6575253F8CA25F13CD499 /* PinterestSegment */,
+				AFB45484ED2ABA1316FEC05A1EABA483 /* TransitionableTab */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -226,45 +302,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7B0C01A93383BB50838B00F1DDFC44E9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5FBC755D29825F32477D2783D9315BBC /* Info.plist */,
-				C310B9C19E89119D28CAC4A28A125C06 /* PinterestSegment.modulemap */,
-				0FFD7493BE806934EB1526B3327CD1CF /* PinterestSegment.xcconfig */,
-				3B2321CDC70F3BA2102E72FD627245C1 /* PinterestSegment-dummy.m */,
-				D03D3311838127FE8B8063B46B8FEBE3 /* PinterestSegment-prefix.pch */,
-				AAE519DB38B4F51C63696B536A704841 /* PinterestSegment-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PinterestSegment";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				5945772D01D40D21C81BEC4C59954A15 /* Pods */,
-				BFF004E161818C72D084D629A5285FBA /* Products */,
+				3ADB52B925FA744C4C3CC54DA88D5847 /* Pods */,
+				D44EB41C12757ADBA47BC17E70562AE1 /* Products */,
 				330376718570DDC1B6E7594B06F1B24A /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8C64946197B2F85F79429F1586A0AAD5 /* DropDown */ = {
-			isa = PBXGroup;
-			children = (
-				064C381C45E6B0DDECC20456C59EF743 /* DPDConstants.swift */,
-				5AE79636D7D12928E784975037145A65 /* DPDKeyboardListener.swift */,
-				D81E36FD1D91E5049F1C4210C6F1F10E /* DPDUIView+Extension.swift */,
-				C636DEC2F381739CA58A6806241C2795 /* DropDown.swift */,
-				7842499E92E1438E14D4391525B89F9A /* DropDown+Appearance.swift */,
-				A67E287F82A5419AB91B526B93DF4C18 /* DropDownCell.swift */,
-				EB10BB7F018C0600C5028B866F6424D8 /* Resources */,
-				4D8F1CD1545DEE6281109F5DABDDF8D8 /* Support Files */,
-			);
-			name = DropDown;
-			path = DropDown;
 			sourceTree = "<group>";
 		};
 		9E540AFDA26CDB1216FD968DE733FDCA /* Pods-PulseTests */ = {
@@ -285,6 +331,21 @@
 			path = "Target Support Files/Pods-PulseTests";
 			sourceTree = "<group>";
 		};
+		AFB45484ED2ABA1316FEC05A1EABA483 /* TransitionableTab */ = {
+			isa = PBXGroup;
+			children = (
+				52935786ED0E0FED745B2EBE57D6DA68 /* AnimationFactory.swift */,
+				6BC679F6B3B8C05BD6464A4BD1991C4C /* CAMediaTimingFunction+Transition.swift */,
+				D10317167BBD6EE95A901B49B3F5A852 /* DefineAnimation.swift */,
+				4B108B22AD69B175C596777D68802989 /* LayerContext.swift */,
+				39B9D57E090BDB0A6D1C3A7E7F4D5DF3 /* Options.swift */,
+				609FBBFC72FF39A1A4A1A053CD1B4CED /* TransitionableTab.swift */,
+				D9F20D175FBCE947FBDEBF39A503B118 /* Support Files */,
+			);
+			name = TransitionableTab;
+			path = TransitionableTab;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,26 +354,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BFF004E161818C72D084D629A5285FBA /* Products */ = {
+		C47E09A8AEF6575253F8CA25F13CD499 /* PinterestSegment */ = {
 			isa = PBXGroup;
 			children = (
-				E82B5AD5AB7E6188B825D751C614DE72 /* DropDown.framework */,
-				7C208D7EF9BC668B674EEEA12BFE4446 /* PinterestSegment.framework */,
-				EED29BAAF4FA1FF88CF2A73647FAFB8F /* Pods_Pulse.framework */,
-				274DC2D9B97007BC76EC2EB95C2F4467 /* Pods_PulseTests.framework */,
-				49B06AD07E96C1D501173E9611917634 /* Pods_PulseUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C985CB78FD19D6BACA01D5F532E7763A /* PinterestSegment */ = {
-			isa = PBXGroup;
-			children = (
-				6485ED76E01E41BCA86708B4C7081BEA /* PinterestSegment.swift */,
-				7B0C01A93383BB50838B00F1DDFC44E9 /* Support Files */,
+				8DF441E6D54466C96E845322AC081A96 /* PinterestSegment.swift */,
+				1AAB8214D9F95A04E10FFB66DC76A40C /* Support Files */,
 			);
 			name = PinterestSegment;
 			path = PinterestSegment;
+			sourceTree = "<group>";
+		};
+		D44EB41C12757ADBA47BC17E70562AE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				896AD31CDD94C00090DC4AF02F8AD314 /* DropDown.framework */,
+				EABF032D5CC7FFB6BDF341813ABE4301 /* PinterestSegment.framework */,
+				3795B58CF191CC141F055B7066CE9EDE /* Pods_Pulse.framework */,
+				74DADD447EBBCC0FE7B4D51593B16337 /* Pods_PulseTests.framework */,
+				12191D412D8720F3DA7B671029EB4CFD /* Pods_PulseUITests.framework */,
+				5028C459D9A33D7128FE87AB67C4B08A /* TransitionableTab.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D85DA4BE78CBC3056F061312CB9BEEDD /* Pods-PulseUITests */ = {
@@ -333,25 +395,23 @@
 			path = "Target Support Files/Pods-PulseUITests";
 			sourceTree = "<group>";
 		};
-		EB10BB7F018C0600C5028B866F6424D8 /* Resources */ = {
+		D9F20D175FBCE947FBDEBF39A503B118 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A45345B541FF1C9499E35E74BBF74696 /* DropDownCell.xib */,
+				D1F4C62DD222F729468CFF4D6645B15C /* Info.plist */,
+				1F04EA291DEAC8BEF6BF535DEDF1ED32 /* TransitionableTab.modulemap */,
+				391E01B0896182F31463871B8C0E991B /* TransitionableTab.xcconfig */,
+				5A9836DAC016428E161AE5305F4EB449 /* TransitionableTab-dummy.m */,
+				948F605D237CA21D18F2B150DC5389AE /* TransitionableTab-prefix.pch */,
+				8AF9D39A2872AC8F5B2865385995C291 /* TransitionableTab-umbrella.h */,
 			);
-			name = Resources;
+			name = "Support Files";
+			path = "../Target Support Files/TransitionableTab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		00015778EA84B84C3F4A442A28665566 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				29CDB3669262D9CAE3E9EDAC998C6C73 /* Pods-Pulse-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1904CD5E5CEA9226AFC355E19C3EB159 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,9 +444,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAADFBB28520D5C13F3F4480ADA7D934 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08FA3FB7ADCE9BF8E24D99A22659BCF2 /* TransitionableTab-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED7A7B550561101F4C236FB5E541BDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A85785B983F4BE11438B87A1322E63 /* Pods-Pulse-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0D38C3CF442B2B7C51E38C5F60B03D77 /* TransitionableTab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91AB0F6B002B1117D59B1152E6E2471 /* Build configuration list for PBXNativeTarget "TransitionableTab" */;
+			buildPhases = (
+				335020C2D16F8D4EFD2AA2096568FCEF /* Sources */,
+				D633444F0A8895ADDB6A2A6D66383322 /* Frameworks */,
+				AAADFBB28520D5C13F3F4480ADA7D934 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitionableTab;
+			productName = TransitionableTab;
+			productReference = 5028C459D9A33D7128FE87AB67C4B08A /* TransitionableTab.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		11E84217F820BD557D25C9C5E3DEFDAA /* Pods-Pulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71976DF47FA6C39CC5B8D61A556B28EA /* Build configuration list for PBXNativeTarget "Pods-Pulse" */;
+			buildPhases = (
+				56FF4B2286BF8458E457215FEC621AE6 /* Sources */,
+				DF2DBC588B5D838ABD5AE81D8DBE24DF /* Frameworks */,
+				EED7A7B550561101F4C236FB5E541BDE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA2846A5D83B7A934ED36EF59137BFC2 /* PBXTargetDependency */,
+				0C1809BAC186B5E9A35939459733D630 /* PBXTargetDependency */,
+				1429215A8D9EDDCF01ABB0F164778198 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pulse";
+			productName = "Pods-Pulse";
+			productReference = 3795B58CF191CC141F055B7066CE9EDE /* Pods_Pulse.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2EA3CBE3C6233D4DE03BB6A8742BB27C /* Pods-PulseUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E005E6C74244F28BC55F94D64E6B829 /* Build configuration list for PBXNativeTarget "Pods-PulseUITests" */;
@@ -402,7 +515,7 @@
 			);
 			name = "Pods-PulseUITests";
 			productName = "Pods-PulseUITests";
-			productReference = 49B06AD07E96C1D501173E9611917634 /* Pods_PulseUITests.framework */;
+			productReference = 12191D412D8720F3DA7B671029EB4CFD /* Pods_PulseUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */ = {
@@ -420,7 +533,7 @@
 			);
 			name = DropDown;
 			productName = DropDown;
-			productReference = E82B5AD5AB7E6188B825D751C614DE72 /* DropDown.framework */;
+			productReference = 896AD31CDD94C00090DC4AF02F8AD314 /* DropDown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6CE506B0876E06C60C8317FC6FBCAE5B /* Pods-PulseTests */ = {
@@ -438,26 +551,7 @@
 			);
 			name = "Pods-PulseTests";
 			productName = "Pods-PulseTests";
-			productReference = 274DC2D9B97007BC76EC2EB95C2F4467 /* Pods_PulseTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F9DEF3915E86D039FFACE72156022984 /* Pods-Pulse */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8017F0E3EF5FBF84F5B78ADF738B921A /* Build configuration list for PBXNativeTarget "Pods-Pulse" */;
-			buildPhases = (
-				655F681FD714DFED1CD375D98575C989 /* Sources */,
-				DBBCC77214D9B9C8A6A02C52AD0179E2 /* Frameworks */,
-				00015778EA84B84C3F4A442A28665566 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EAAABE41F4A425102E1CE83A9058E99C /* PBXTargetDependency */,
-				F9948BBD9D87F9DBA14F39E45113123A /* PBXTargetDependency */,
-			);
-			name = "Pods-Pulse";
-			productName = "Pods-Pulse";
-			productReference = EED29BAAF4FA1FF88CF2A73647FAFB8F /* Pods_Pulse.framework */;
+			productReference = 74DADD447EBBCC0FE7B4D51593B16337 /* Pods_PulseTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FECEE591A990DD0D724958FD9AFEF5C4 /* PinterestSegment */ = {
@@ -474,7 +568,7 @@
 			);
 			name = PinterestSegment;
 			productName = PinterestSegment;
-			productReference = 7C208D7EF9BC668B674EEEA12BFE4446 /* PinterestSegment.framework */;
+			productReference = EABF032D5CC7FFB6BDF341813ABE4301 /* PinterestSegment.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -494,15 +588,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BFF004E161818C72D084D629A5285FBA /* Products */;
+			productRefGroup = D44EB41C12757ADBA47BC17E70562AE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */,
 				FECEE591A990DD0D724958FD9AFEF5C4 /* PinterestSegment */,
-				F9DEF3915E86D039FFACE72156022984 /* Pods-Pulse */,
+				11E84217F820BD557D25C9C5E3DEFDAA /* Pods-Pulse */,
 				6CE506B0876E06C60C8317FC6FBCAE5B /* Pods-PulseTests */,
 				2EA3CBE3C6233D4DE03BB6A8742BB27C /* Pods-PulseUITests */,
+				0D38C3CF442B2B7C51E38C5F60B03D77 /* TransitionableTab */,
 			);
 		};
 /* End PBXProject section */
@@ -519,19 +614,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		335020C2D16F8D4EFD2AA2096568FCEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA46F2F0BAD0585B49336671B1974774 /* AnimationFactory.swift in Sources */,
+				6BDCDC4DFFD42CE846D5A4F2EBEFB921 /* CAMediaTimingFunction+Transition.swift in Sources */,
+				D9D8B9E56F23089E08844B0D4567CC94 /* DefineAnimation.swift in Sources */,
+				34C25706DE1AB30C7E5CA85A50D3D91A /* LayerContext.swift in Sources */,
+				A4CF1E5645E3293B9F670AA69AB851AC /* Options.swift in Sources */,
+				73AD4359B9904443EE49906D3B3CE8C9 /* TransitionableTab-dummy.m in Sources */,
+				D0C666BDE2911906D3CD44BD203C02D3 /* TransitionableTab.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56FF4B2286BF8458E457215FEC621AE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBD203BDC0D273391D097276E6390E5 /* Pods-Pulse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CA5DE1C7152780502CE290AD06E3E0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EF1512B2517C911F9AFA1BF03B586FC5 /* Pods-PulseUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		655F681FD714DFED1CD375D98575C989 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FE4C9344C9075A01F7DEC6D160EE54C /* Pods-Pulse-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,33 +678,79 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0C1809BAC186B5E9A35939459733D630 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PinterestSegment;
+			target = FECEE591A990DD0D724958FD9AFEF5C4 /* PinterestSegment */;
+			targetProxy = 6896575E17D49877AC77D41CDE4AC6F1 /* PBXContainerItemProxy */;
+		};
+		1429215A8D9EDDCF01ABB0F164778198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitionableTab;
+			target = 0D38C3CF442B2B7C51E38C5F60B03D77 /* TransitionableTab */;
+			targetProxy = 16A301ECDF79B068D0D2C796CFF68743 /* PBXContainerItemProxy */;
+		};
 		291E56193CA302979D45C302BF54321C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Pulse";
-			target = F9DEF3915E86D039FFACE72156022984 /* Pods-Pulse */;
+			target = 11E84217F820BD557D25C9C5E3DEFDAA /* Pods-Pulse */;
 			targetProxy = E18872D22980AE90B31F486262EABD32 /* PBXContainerItemProxy */;
 		};
-		EAAABE41F4A425102E1CE83A9058E99C /* PBXTargetDependency */ = {
+		BA2846A5D83B7A934ED36EF59137BFC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DropDown;
 			target = 5168099F2EBFC99A707C03C9EADE01A5 /* DropDown */;
-			targetProxy = 73B6C78EAC5633334F61D25562365886 /* PBXContainerItemProxy */;
+			targetProxy = D1161095BF7814890B3A5EBE2B10B5BE /* PBXContainerItemProxy */;
 		};
 		F532B56AF737F1D3C3239CEFC40C7F1E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Pulse";
-			target = F9DEF3915E86D039FFACE72156022984 /* Pods-Pulse */;
+			target = 11E84217F820BD557D25C9C5E3DEFDAA /* Pods-Pulse */;
 			targetProxy = 9BC1B09AECF8FBA76AB7A9BD4B2E4AAF /* PBXContainerItemProxy */;
-		};
-		F9948BBD9D87F9DBA14F39E45113123A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PinterestSegment;
-			target = FECEE591A990DD0D724958FD9AFEF5C4 /* PinterestSegment */;
-			targetProxy = A4D944434508AF35EA0A1A410A40113B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		09E09B4751FCC33ADB06F839DE40ABC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05139E5CBB04B63DA7AC1ED7B1446210 /* Pods-Pulse.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pulse/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pulse/Pods-Pulse.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		10FD7D73963E3B51F7F3960748428333 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 36F32972D0BF2DFFD095FCAD2CE2221E /* Pods-PulseTests.debug.xcconfig */;
@@ -672,9 +827,45 @@
 			};
 			name = Debug;
 		};
-		5DBAD774B324CB14185B6F53E73FD23D /* Debug */ = {
+		23951302B9D42DCA8214A083E2D6111B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05139E5CBB04B63DA7AC1ED7B1446210 /* Pods-Pulse.debug.xcconfig */;
+			baseConfigurationReference = 391E01B0896182F31463871B8C0E991B /* TransitionableTab.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionableTab/TransitionableTab-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionableTab/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TransitionableTab/TransitionableTab.modulemap";
+				PRODUCT_MODULE_NAME = TransitionableTab;
+				PRODUCT_NAME = TransitionableTab;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		42928EFDE94CEE4DC5F46FE4984E2EFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83EF27F2259A794794D2374C6E4AC8A /* Pods-Pulse.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -704,13 +895,50 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		51E76AEAC226668E35A071A13840294D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391E01B0896182F31463871B8C0E991B /* TransitionableTab.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TransitionableTab/TransitionableTab-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TransitionableTab/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TransitionableTab/TransitionableTab.modulemap";
+				PRODUCT_MODULE_NAME = TransitionableTab;
+				PRODUCT_NAME = TransitionableTab;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		5DC0083F57E9AB706B46C5B5D73B38D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -777,7 +1005,7 @@
 		};
 		67C107B4F3282CD8F0372233FE443167 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FFD7493BE806934EB1526B3327CD1CF /* PinterestSegment.xcconfig */;
+			baseConfigurationReference = 248F2C809CFBC24AD6F7041D1CE2BE14 /* PinterestSegment.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -850,49 +1078,9 @@
 			};
 			name = Release;
 		};
-		88B19F72930E40A595E2C40A84A0A9D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E83EF27F2259A794794D2374C6E4AC8A /* Pods-Pulse.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Pulse/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Pulse/Pods-Pulse.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		8A1A793254763290DA347BA462B5A2DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50286CE2773301B45007284AC8DCD650 /* DropDown.xcconfig */;
+			baseConfigurationReference = A8CE8A0557D87DFA23E3676412E46680 /* DropDown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1026,7 +1214,7 @@
 		};
 		B539DCDA9157A3D70680284A10384E1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50286CE2773301B45007284AC8DCD650 /* DropDown.xcconfig */;
+			baseConfigurationReference = A8CE8A0557D87DFA23E3676412E46680 /* DropDown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1062,7 +1250,7 @@
 		};
 		BB69EC3A19CA2BB546C929DE5094DEC3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FFD7493BE806934EB1526B3327CD1CF /* PinterestSegment.xcconfig */;
+			baseConfigurationReference = 248F2C809CFBC24AD6F7041D1CE2BE14 /* PinterestSegment.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1127,6 +1315,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		71976DF47FA6C39CC5B8D61A556B28EA /* Build configuration list for PBXNativeTarget "Pods-Pulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09E09B4751FCC33ADB06F839DE40ABC5 /* Debug */,
+				42928EFDE94CEE4DC5F46FE4984E2EFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7E005E6C74244F28BC55F94D64E6B829 /* Build configuration list for PBXNativeTarget "Pods-PulseUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1136,20 +1333,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8017F0E3EF5FBF84F5B78ADF738B921A /* Build configuration list for PBXNativeTarget "Pods-Pulse" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5DBAD774B324CB14185B6F53E73FD23D /* Debug */,
-				88B19F72930E40A595E2C40A84A0A9D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A2C39552B3BC494096C21E9088B10323 /* Build configuration list for PBXNativeTarget "PinterestSegment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67C107B4F3282CD8F0372233FE443167 /* Debug */,
 				BB69EC3A19CA2BB546C929DE5094DEC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91AB0F6B002B1117D59B1152E6E2471 /* Build configuration list for PBXNativeTarget "TransitionableTab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23951302B9D42DCA8214A083E2D6111B /* Debug */,
+				51E76AEAC226668E35A071A13840294D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

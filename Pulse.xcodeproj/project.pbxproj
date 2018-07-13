@@ -33,6 +33,8 @@
 		D07882F620F86DFD00468678 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882F520F86DFD00468678 /* Event.swift */; };
 		D07882F820F86E0500468678 /* Pulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882F720F86E0500468678 /* Pulse.swift */; };
 		D07882FA20F8806900468678 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882F920F8806900468678 /* PopupViewController.swift */; };
+		D07882FC20F8B22400468678 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882FB20F8B22300468678 /* TabBarController.swift */; };
+		D07882FE20F8B64500468678 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882FD20F8B64500468678 /* Constants.swift */; };
 		E9F48195B661731ADF34FF12 /* Pods_PulseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3280CA62372A7A37382D7EB /* Pods_PulseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +116,8 @@
 		D07882F520F86DFD00468678 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D07882F720F86E0500468678 /* Pulse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulse.swift; sourceTree = "<group>"; };
 		D07882F920F8806900468678 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		D07882FB20F8B22300468678 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = "/Users/Justin/Documents/Apps/Pulse/Pulse/View Controllers/TabBarController.swift"; sourceTree = "<absolute>"; };
+		D07882FD20F8B64500468678 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E6C1CC86E4BECF18F38B2A19 /* Pods-PulseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PulseTests/Pods-PulseTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3280CA62372A7A37382D7EB /* Pods_PulseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -218,6 +222,7 @@
 				D078829E20F7DBB700468678 /* Assets.xcassets */,
 				D07882A020F7DBB700468678 /* LaunchScreen.storyboard */,
 				D07882A320F7DBB700468678 /* Info.plist */,
+				D07882FD20F8B64500468678 /* Constants.swift */,
 			);
 			path = Pulse;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 		D07882CF20F80F5300468678 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D07882FB20F8B22300468678 /* TabBarController.swift */,
 				D07882C520F7DC5600468678 /* MainViewController.swift */,
 				D07882C720F7DD9000468678 /* QAViewController.swift */,
 				D07882D320F8101D00468678 /* IdeaPitchViewController.swift */,
@@ -502,11 +508,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pulse/Pods-Pulse-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/PinterestSegment/PinterestSegment.framework",
+				"${BUILT_PRODUCTS_DIR}/TransitionableTab/TransitionableTab.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestSegment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionableTab.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -541,9 +549,11 @@
 				D07882CC20F7E18400468678 /* Question.swift in Sources */,
 				D078829820F7DBB400468678 /* AppDelegate.swift in Sources */,
 				D07882CE20F7E5A100468678 /* QATableViewCellDelegate.swift in Sources */,
+				D07882FC20F8B22400468678 /* TabBarController.swift in Sources */,
 				D07882F020F86B1B00468678 /* EventCollectionCell.swift in Sources */,
 				D07882F820F86E0500468678 /* Pulse.swift in Sources */,
 				D07882F620F86DFD00468678 /* Event.swift in Sources */,
+				D07882FE20F8B64500468678 /* Constants.swift in Sources */,
 				D07882CA20F7DDBA00468678 /* QATableViewCell.swift in Sources */,
 				D07882F420F86C5400468678 /* PulseNewsViewController.swift in Sources */,
 				D07882F220F86B8900468678 /* PulseTableViewCell.swift in Sources */,

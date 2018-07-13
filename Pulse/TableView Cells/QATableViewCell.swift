@@ -15,7 +15,7 @@ class QATableViewCell : UITableViewCell {
     @IBOutlet weak var votesLabel : UILabel!
     @IBOutlet weak var upButton : UIButton!
     @IBOutlet weak var downButton : UIButton!
-    @IBOutlet weak var answerText : UILabel!
+    @IBOutlet weak var tagLbl : UILabel!
 
     weak var qaCellDelegate : QATableViewCellDelegate?
     

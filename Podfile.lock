@@ -1,20 +1,24 @@
 PODS:
   - DropDown (2.0.2)
   - PinterestSegment (1.2.0)
+  - TransitionableTab (0.1.2)
 
 DEPENDENCIES:
   - DropDown
   - PinterestSegment
+  - TransitionableTab (~> 0.1.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - DropDown
     - PinterestSegment
+    - TransitionableTab
 
 SPEC CHECKSUMS:
   DropDown: 75562633a203f57a917021b4edb96c76f293b0ec
   PinterestSegment: d589fce6c62141466b9f36ea8ab0a16fde9ac8f4
+  TransitionableTab: 2c4af884ff0048b560269245ab6880bd5db67c5e
 
-PODFILE CHECKSUM: 5fa895f928b6b5a480eee708a747fc455d63ff33
+PODFILE CHECKSUM: 8445a76c6ef48a3ee8eb588ab8cf3cedab8d91d3
 
 COCOAPODS: 1.5.3

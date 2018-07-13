@@ -115,9 +115,22 @@ class QAViewController : UIViewController {
         let question = Question(question: "Does GE have a Cryptocurreny?", answer: "yes its called flannerycoin", tag: "Crypto")
         let questionTwo = Question(question: "Is GE being sold to Github", answer: nil, tag: "Finance")
         let questionThree = Question(question: "GE acquiring Nestle for unlimited oreos?", answer: nil, tag: "Serious")
+        let questionFour = Question(question: "Can we start playing soccer indoors?", answer: nil, tag: "Fun")
+        let questionFive = Question(question: "I like the sound of this app", answer: nil, tag: "Serious")
+        let questionSix = Question(question: "Coffee anyone?", answer: nil, tag: "Office")
+        let questionSeven = Question(question: "Is there anymore donuts?", answer: nil, tag: "Fun")
+        let questionEight = Question(question: "What is happening to GE as of now?", answer: nil, tag: "Serious")
+        let questionNine = Question(question: "Can we buy more nerf guns?", answer: nil, tag: "Nerf")
         questions.append(question)
         questions.append(questionTwo)
         questions.append(questionThree)
+        questions.append(questionFour)
+        questions.append(questionFive)
+        questions.append(questionSix)
+        questions.append(questionSeven)
+        questions.append(questionEight)
+        questions.append(questionNine)
+
         self.constantQuestions = self.questions
     }
     
@@ -196,13 +209,54 @@ extension QAViewController : UITableViewDelegate, UITableViewDataSource, QATable
 
     }
     
+    func styleCell(tag : String, cell : QATableViewCell) -> QATableViewCell {
+        cell.tagLbl.layer.borderWidth = 1.0
+        cell.tagLbl.layer.cornerRadius = 5.0
+        if tag == "Engineering" {
+            cell.tagLbl.layer.borderColor = Constants.Colors.flatblue.cgColor
+            cell.tagLbl.textColor = Constants.Colors.flatblue
+        }
+        else if tag == "Office" {
+            cell.tagLbl.layer.borderColor = Constants.Colors.flatdarkblue.cgColor
+            cell.tagLbl.textColor = Constants.Colors.flatdarkblue
+        }
+        else if tag == "Crypto" {
+            cell.tagLbl.layer.borderColor = Constants.Colors.flatgreen.cgColor
+            cell.tagLbl.textColor = Constants.Colors.flatgreen
+        }
+        else if tag == "Nerf" {
+            cell.tagLbl.layer.borderColor = Constants.Colors.flatorange.cgColor
+            cell.tagLbl.textColor = Constants.Colors.flatorange
+        }
+        else if tag == "Fun" {
+            cell.tagLbl.layer.borderColor = Constants.Colors.flatpurple.cgColor
+            cell.tagLbl.textColor = Constants.Colors.flatpurple
+        }
+        else if tag == "Design" {
+            cell.tagLbl.layer.borderColor = Constants.Colors.flatred.cgColor
+            cell.tagLbl.textColor = Constants.Colors.flatred
+        }
+        else if tag == "Serious" {
+            cell.tagLbl.layer.borderColor = Constants.Colors.flatturqoise.cgColor
+            cell.tagLbl.textColor = Constants.Colors.flatturqoise
+        }
+        else if tag == "Finance" {
+            cell.tagLbl.layer.borderColor = Constants.Colors.flatyellow.cgColor
+            cell.tagLbl.textColor = Constants.Colors.flatyellow
+        }
+        cell.tagLbl.text = tag
+
+        return cell
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "QACell", for: indexPath) as! QATableViewCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: "QACell", for: indexPath) as! QATableViewCell
         cell.qaCellDelegate = self
         
         let question = questions[indexPath.row]
-        
+        cell = styleCell(tag: question.tag!, cell: cell)
         cell.questionLabel.text = question.question
+//        cell.questionLabel.sizeToFit()
         cell.votesLabel.text = "\(question.votes)"
         if question.votes > 0 {
             cell.votesLabel.textColor = UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1.0)
@@ -213,6 +267,7 @@ extension QAViewController : UITableViewDelegate, UITableViewDataSource, QATable
         else {
             cell.votesLabel.textColor = UIColor(red: 231/255, green: 76/255, blue: 60/255, alpha: 1.0)
         }
+        
         return cell
     }
     
