@@ -15,6 +15,5 @@ class EventCollectionCell : UICollectionViewCell {
     @IBOutlet weak var eventNameLbl : UILabel!
     @IBOutlet weak var eventDateLbl : UILabel!
     @IBOutlet weak var eventLocationLbl : UILabel!
-    @IBOutlet weak var miniView : UIView!
 
 }

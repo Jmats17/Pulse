@@ -125,9 +125,14 @@ class QAViewController : UIViewController {
         let alert = UIAlertController(title: "Post a Question", message: "Please post a question you have below", preferredStyle: .alert)
         alert.addTextField(configurationHandler: { (textField) in
             textField.placeholder = "Enter your question here"
+      
+            textField.autocapitalizationType = .words
+            
         })
         alert.addTextField(configurationHandler: { (textField) in
             textField.placeholder = "Enter a tag"
+          
+            textField.autocapitalizationType = .words
         })
         let submit = UIAlertAction(title: "Submit", style: .default) { (action) in
             let questionTextfield = alert.textFields![0] as UITextField

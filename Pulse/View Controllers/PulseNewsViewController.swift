@@ -35,7 +35,7 @@ class PulseNewsViewController : UIViewController {
     }
     
     func generateEventData() {
-        let eventOne = Event(name: "Soccer Tuesdays", location: "Miami", image: UIImage(named:"soccer.png")!)
+        let eventOne = Event(name: "Soccer", location: "Miami", image: UIImage(named:"soccer.png")!)
         let eventTwo = Event(name: "Yogaa", location: "South Beach", image: UIImage(named:"yoga.png")!)
         let eventThree = Event(name: "Dinner!!", location: "Fridays", image: UIImage(named:"dinner.png")!)
          let eventFour = Event(name: "Beach Day", location: "South Beach", image: UIImage(named:"beach.png")!)
@@ -116,7 +116,6 @@ extension PulseNewsViewController : UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EventCell", for: indexPath) as! EventCollectionCell
         let event = events[indexPath.row]
-        cell.miniView.layer.cornerRadius = 5.0
         cell.eventNameLbl.text = event.name
         cell.layer.cornerRadius = 6.0
         cell.layer.masksToBounds = false
