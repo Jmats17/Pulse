@@ -142,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AH6-EO-ZL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.799999999999997" y="-601.34932533733138"/>
+            <point key="canvasLocation" x="138" y="-304"/>
         </scene>
         <!--Idea Pitch-->
         <scene sceneID="cpR-YK-DmH">
@@ -296,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTf-GV-TFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="861.60000000000002" y="-601.34932533733138"/>
+            <point key="canvasLocation" x="287" y="-1100"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tlv-1o-Fs3">
@@ -325,14 +325,14 @@
                         <color key="selectedImageTintColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="gsx-c7-S99" kind="relationship" relationship="viewControllers" id="glc-ji-eRq"/>
-                        <segue destination="sMU-XV-l27" kind="relationship" relationship="viewControllers" id="mEQ-Pe-G2F"/>
-                        <segue destination="RUa-O5-RUm" kind="relationship" relationship="viewControllers" id="iWL-ms-UvU"/>
+                        <segue destination="gsx-c7-S99" kind="relationship" relationship="viewControllers" id="rog-E9-MvF"/>
+                        <segue destination="sMU-XV-l27" kind="relationship" relationship="viewControllers" id="4xI-ZY-Qyp"/>
+                        <segue destination="RUa-O5-RUm" kind="relationship" relationship="viewControllers" id="LZU-IL-GVm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B7B-d7-t0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1684" y="-601"/>
+            <point key="canvasLocation" x="-1479" y="-601"/>
         </scene>
         <!--Daily Pulse-->
         <scene sceneID="v9H-Fm-cms">
@@ -525,6 +525,9 @@
                                     <outlet property="delegate" destination="gsx-c7-S99" id="vNu-0k-1df"/>
                                 </connections>
                             </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cgj-g1-PS2">
+                                <rect key="frame" x="304" y="44" width="55" height="55"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -532,14 +535,18 @@
                             <constraint firstItem="125-dv-ycA" firstAttribute="trailing" secondItem="qYr-ni-dGh" secondAttribute="trailing" constant="41" id="Dru-Mo-O98"/>
                             <constraint firstItem="IlJ-bx-snd" firstAttribute="top" secondItem="qYr-ni-dGh" secondAttribute="bottom" constant="24" id="IOd-md-f1l"/>
                             <constraint firstItem="IlJ-bx-snd" firstAttribute="leading" secondItem="SWh-sj-L3h" secondAttribute="leading" id="KYp-lF-s2d"/>
+                            <constraint firstItem="cgj-g1-PS2" firstAttribute="leading" secondItem="125-dv-ycA" secondAttribute="leading" constant="304" id="OTq-At-aLm"/>
                             <constraint firstItem="125-dv-ycA" firstAttribute="trailing" secondItem="SWh-sj-L3h" secondAttribute="trailing" id="PWj-Ym-2zG"/>
                             <constraint firstAttribute="trailing" secondItem="YIS-9c-RPT" secondAttribute="trailing" id="QL1-Qg-lIe"/>
                             <constraint firstItem="SWh-sj-L3h" firstAttribute="top" secondItem="IlJ-bx-snd" secondAttribute="bottom" constant="8" symbolic="YES" id="TwC-Ie-dto"/>
                             <constraint firstItem="xle-41-KG6" firstAttribute="top" secondItem="SWh-sj-L3h" secondAttribute="bottom" constant="17" id="XOD-tC-iNO"/>
                             <constraint firstItem="SWh-sj-L3h" firstAttribute="leading" secondItem="xle-41-KG6" secondAttribute="leading" id="a6b-Nk-Pty"/>
+                            <constraint firstItem="cgj-g1-PS2" firstAttribute="centerY" secondItem="qYr-ni-dGh" secondAttribute="centerY" id="eD4-Mp-bNF"/>
                             <constraint firstAttribute="bottom" secondItem="YIS-9c-RPT" secondAttribute="bottom" id="fhb-T2-b8I"/>
                             <constraint firstItem="YIS-9c-RPT" firstAttribute="leading" secondItem="VZH-zb-0CX" secondAttribute="leading" id="gOb-0p-TdX"/>
+                            <constraint firstItem="cgj-g1-PS2" firstAttribute="trailing" secondItem="VZH-zb-0CX" secondAttribute="trailingMargin" id="ly8-cw-xok"/>
                             <constraint firstItem="YIS-9c-RPT" firstAttribute="top" secondItem="xle-41-KG6" secondAttribute="bottom" constant="8" symbolic="YES" id="rrq-Z7-dP3"/>
+                            <constraint firstItem="cgj-g1-PS2" firstAttribute="top" secondItem="125-dv-ycA" secondAttribute="top" constant="24" id="sqh-lQ-0DZ"/>
                             <constraint firstItem="qYr-ni-dGh" firstAttribute="leading" secondItem="IlJ-bx-snd" secondAttribute="leading" id="t3N-Dt-TKI"/>
                             <constraint firstItem="qYr-ni-dGh" firstAttribute="top" secondItem="125-dv-ycA" secondAttribute="top" constant="20" id="tAy-i9-7sT"/>
                         </constraints>
@@ -548,6 +555,7 @@
                     <tabBarItem key="tabBarItem" title="Daily Pulse" image="pulse" id="4BE-7g-Iri"/>
                     <connections>
                         <outlet property="collectionView" destination="SWh-sj-L3h" id="aDd-Fj-sLi"/>
+                        <outlet property="profImageView" destination="cgj-g1-PS2" id="TpL-gu-f8O"/>
                         <outlet property="tableView" destination="YIS-9c-RPT" id="sLw-w6-Exk"/>
                     </connections>
                 </viewController>

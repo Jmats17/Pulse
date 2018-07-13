@@ -14,6 +14,7 @@ class PulseNewsViewController : UIViewController {
     
     @IBOutlet weak var tableView : UITableView!
     @IBOutlet weak var collectionView : UICollectionView!
+    @IBOutlet weak var profImageView : UIImageView!
     var pulses = [Pulse]()
     var events = [Event]()
     
@@ -23,7 +24,16 @@ class PulseNewsViewController : UIViewController {
         tableView.delegate = self
         generateEventData()
         generatePulseData()
-        
+        profImageView.image = UIImage(named: "prof.png")
+        profImageView.layer.cornerRadius = profImageView.frame.size.height / 2
+
+    }
+  
+    override func viewWillLayoutSubviews() {
+
+       profImageView.layer.cornerRadius = profImageView.frame.size.height / 2
+        profImageView.clipsToBounds = true
+
     }
     
     func generatePulseData() {
