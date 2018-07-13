@@ -27,11 +27,13 @@ class PulseNewsViewController : UIViewController {
     }
     
     func generatePulseData() {
-        let pulseOne = Pulse(title: "GE selling oreos now", author: "Elon Tusk", description: "GE is now selling oreos to its employees in attempt to boost morale. Previously oreos were banned, but as the company undergoes some changes, John Flannery has come to the rescue with this game changing idea. Oreos for uber? Oreos of Airbnb? Oreo Blockchain? We'll find out soon.", isPinned : true)
-        let pulseTwo = Pulse(title: "Mark Zuckerberg joins CoreTech", author: "Evan Spiegel", description: "In the latest news, Zuckerberg has decided to join the CoreTech team as a Frontend developer. He'll be joining an amazing team on the brink of sending its employees to Mars to explore healthcare and aviation. Elon Musk commented saying, 'My company Ford is still better than any car John Flannery and the Tesla team can build.'", isPinned: true)
+        let pulseOne = Pulse(title: "GE to the 3rd floor", author: "Elon Tusk", description: "GE is now selling oreos", isPinned : true)
+        let pulseTwo = Pulse(title: "The Road Ahead", author: "Evan Spiegel", description: "What is the road ahead you may ask? Well great question, there are many ways I can go about answering this, but I'll stick to the main one. We really out to look at this answer carefully because when you really think about it, we're answering it just how you want it to be answered. With no logic or thought.", isPinned: true)
+        let pulseThree = Pulse(title: "Bounce house? Yes.", author: "Evan Spiegel", description: "In the latest news, Zuckerberg has decided to join the CoreTech team as a Frontend developer. He'll be joining an amazing team on the brink of sending its employees to Mars to explore healthcare and aviation. Elon Musk commented saying, 'I'm lowkey jealous'", isPinned: true)
         self.pulses.append(pulseOne)
         self.pulses.append(pulseTwo)
-        
+        self.pulses.append(pulseThree)
+
     }
     
     func generateEventData() {

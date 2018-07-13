@@ -83,7 +83,14 @@ class IdeaPitchViewController : UIViewController {
     }
     
     @IBAction func submit(sender : UIButton) {
-        
+        let alert = UIAlertController(title: "Idea Submitted!", message: "Thanks for sharing Justin. If we like it, maybe we'll take you out to coffee to learn more ;)", preferredStyle: .actionSheet)
+        let cancel = UIAlertAction(title: "Thanks!", style: .cancel) { (action) in
+            self.titleField.text = ""
+            self.ideaField.text = ""
+            self.categoryLabel.text = "Select Category"
+        }
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func styleTextFieldTextView() {

@@ -8,13 +8,16 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class PopupViewController : UIViewController {
     
     @IBOutlet weak var titleLbl : UILabel!
     @IBOutlet weak var dateAuthorLbl : UILabel!
     @IBOutlet weak var descriptionLbl : UITextView!
-
+    let synthesizer = AVSpeechSynthesizer()
+    var myUtterance = AVSpeechUtterance(string: "")
+    
     var pulseTitle : String?
     var dateAuthor : String?
     var pulseDescription : String?
@@ -35,6 +38,13 @@ class PopupViewController : UIViewController {
         self.view.addGestureRecognizer(swipeDown)
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        myUtterance = AVSpeechUtterance(string: pulseDescription!)
+        let voice = AVSpeechSynthesisVoice(language: "en-GB")
+        myUtterance.voice = voice
+        myUtterance.rate = 0.5
+        synthesizer.speak(myUtterance)
+    }
 
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
