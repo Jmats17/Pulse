@@ -20,6 +20,8 @@
 		D07882CA20F7DDBA00468678 /* QATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882C920F7DDBA00468678 /* QATableViewCell.swift */; };
 		D07882CC20F7E18400468678 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882CB20F7E18400468678 /* Question.swift */; };
 		D07882CE20F7E5A100468678 /* QATableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882CD20F7E5A100468678 /* QATableViewCellDelegate.swift */; };
+		D07882D420F8101D00468678 /* IdeaPitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882D320F8101D00468678 /* IdeaPitchViewController.swift */; };
+		D07882D620F8144300468678 /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07882D520F8144200468678 /* AnimatedSwitch.swift */; };
 		E9F48195B661731ADF34FF12 /* Pods_PulseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3280CA62372A7A37382D7EB /* Pods_PulseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		D07882C920F7DDBA00468678 /* QATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QATableViewCell.swift; sourceTree = "<group>"; };
 		D07882CB20F7E18400468678 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		D07882CD20F7E5A100468678 /* QATableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QATableViewCellDelegate.swift; sourceTree = "<group>"; };
+		D07882D320F8101D00468678 /* IdeaPitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaPitchViewController.swift; sourceTree = "<group>"; };
+		D07882D520F8144200468678 /* AnimatedSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSwitch.swift; sourceTree = "<group>"; };
 		E6C1CC86E4BECF18F38B2A19 /* Pods-PulseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PulseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PulseTests/Pods-PulseTests.release.xcconfig"; sourceTree = "<group>"; };
 		F3280CA62372A7A37382D7EB /* Pods_PulseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PulseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -146,11 +150,11 @@
 			isa = PBXGroup;
 			children = (
 				D078829720F7DBB400468678 /* AppDelegate.swift */,
-				D07882C520F7DC5600468678 /* MainViewController.swift */,
-				D07882C920F7DDBA00468678 /* QATableViewCell.swift */,
-				D07882C720F7DD9000468678 /* QAViewController.swift */,
-				D07882CD20F7E5A100468678 /* QATableViewCellDelegate.swift */,
-				D07882CB20F7E18400468678 /* Question.swift */,
+				D07882D520F8144200468678 /* AnimatedSwitch.swift */,
+				D07882D020F80F5900468678 /* TableView Cells */,
+				D07882CF20F80F5300468678 /* View Controllers */,
+				D07882D120F80F6E00468678 /* Delegates */,
+				D07882D220F80F7600468678 /* Models */,
 				D078829B20F7DBB400468678 /* Main.storyboard */,
 				D078829E20F7DBB700468678 /* Assets.xcassets */,
 				D07882A020F7DBB700468678 /* LaunchScreen.storyboard */,
@@ -175,6 +179,40 @@
 				D07882B920F7DBB700468678 /* Info.plist */,
 			);
 			path = PulseUITests;
+			sourceTree = "<group>";
+		};
+		D07882CF20F80F5300468678 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D07882C520F7DC5600468678 /* MainViewController.swift */,
+				D07882C720F7DD9000468678 /* QAViewController.swift */,
+				D07882D320F8101D00468678 /* IdeaPitchViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D07882D020F80F5900468678 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D07882C920F7DDBA00468678 /* QATableViewCell.swift */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		D07882D120F80F6E00468678 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D07882CD20F7E5A100468678 /* QATableViewCellDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		D07882D220F80F7600468678 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D07882CB20F7E18400468678 /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,10 +389,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pulse/Pods-Pulse-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/PinterestSegment/PinterestSegment.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestSegment.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,8 +431,10 @@
 				D078829820F7DBB400468678 /* AppDelegate.swift in Sources */,
 				D07882CE20F7E5A100468678 /* QATableViewCellDelegate.swift in Sources */,
 				D07882CA20F7DDBA00468678 /* QATableViewCell.swift in Sources */,
+				D07882D620F8144300468678 /* AnimatedSwitch.swift in Sources */,
 				D07882C820F7DD9000468678 /* QAViewController.swift in Sources */,
 				D07882C620F7DC5600468678 /* MainViewController.swift in Sources */,
+				D07882D420F8101D00468678 /* IdeaPitchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

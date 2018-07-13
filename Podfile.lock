@@ -1,16 +1,20 @@
 PODS:
+  - DropDown (2.0.2)
   - PinterestSegment (1.2.0)
 
 DEPENDENCIES:
+  - DropDown
   - PinterestSegment
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - DropDown
     - PinterestSegment
 
 SPEC CHECKSUMS:
+  DropDown: 75562633a203f57a917021b4edb96c76f293b0ec
   PinterestSegment: d589fce6c62141466b9f36ea8ab0a16fde9ac8f4
 
-PODFILE CHECKSUM: 7e03ef00dd71273785265032894d750d44be7fb7
+PODFILE CHECKSUM: a1c3afa847fd3e955154191b5d4768df614cf81d
 
 COCOAPODS: 1.5.3
